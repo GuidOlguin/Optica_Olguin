@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    background: #1b1c1f;
+}
+.header{
+    background:#27262a ;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    float: left;
+    height: 73px;
+    width: 80px;
+}
+    
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 30px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    text-align: center;
+    
+}
+.nav-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-link:hover{
+    background-color: orange;
+    transition: 0.5s ;
+}
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-out;
+}
+.slider li{
+    height: 560px;
+    width: 90%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+
+
+@keyframes cambio{
+
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 150px;
+    column-gap: 20%;
+    padding-top: 15%;
+    
+}
+.gallery__img{
+    width: 100%;
+}
+.info{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    top: 300px;
+    right: 50px;
+    margin: 20px;
+}
+.info-elementos{
+
+    list-style: none;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.info-imagen{
+    height: 60px;
+    vertical-align: middle;
+    padding: 10px;
+
+}
+.info-elementos li a{
+    text-decoration: none;
+    color:pink; 
+}
+
+
+
+
+
+
